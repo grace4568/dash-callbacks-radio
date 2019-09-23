@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output, State
 
 myheading1='How to use callbacks'
 tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot', 'dinosaurs']
+list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot',]
 list_of_images=['outlier.png', 'correlation.png', '4096.png', 'scatterplot.png', 'comic2-3498.png']
 sourceurl = 'https://xkcd.com/'
 githublink = 'https://github.com/austinlasseter/dash-callbacks-radio'
@@ -33,7 +33,7 @@ app.layout = html.Div(children=[
                 {'label':list_of_options[1], 'value':list_of_images[1]},
                 {'label':list_of_options[2], 'value':list_of_images[2]},
                 {'label':list_of_options[3], 'value':list_of_images[3]},
-                {'label':list_of_options[3], 'value':list_of_images[4]},
+                {'label':list_of_options[4], 'value':list_of_images[4]},
                 ],
         value=list_of_images[5],
         ),
